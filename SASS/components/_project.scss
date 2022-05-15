@@ -1,0 +1,8 @@
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project__item:not(:last-child) {
+  margin-right: 8px;
+}
