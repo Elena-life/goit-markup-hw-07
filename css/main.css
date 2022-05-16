@@ -85,7 +85,7 @@ body {
   color: var(--accent-color);
 }
 
-.navigation__link .current {
+.navigation__link:hover .current, .navigation__link:focus .current {
   color: var(--accent-color);
 }
 
