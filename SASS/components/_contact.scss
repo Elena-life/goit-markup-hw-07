@@ -16,17 +16,15 @@
 .contact__link {
   color: var(--primery-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color); 
+    .contact__icon {fill: var(--accent-color);}
+  }
 }
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color); 
-}
+
 .contact__icon {
   margin-right: 10px;
   fill: var(--primery-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-.contact__link:hover .contact__icon,
-.contact__link:focus .contact__icon {
-  fill: var(--accent-color);
-}

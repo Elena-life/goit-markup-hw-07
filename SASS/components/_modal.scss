@@ -45,10 +45,10 @@
   width: 11px;
   height: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__icon:hover,
-.modal__icon:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .modal__title {
   margin: 0;
@@ -82,22 +82,28 @@
   padding: 0 15px 0 40px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    .record__icon {
+      border-color: var(--accent-color);
+    }
+  }
 }
+
 .record__icon {
   position: absolute;
   top: 40%;
   left: 12px;
   fill: var(--logo-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
-.record__input:hover,
-.record__input:focus {
-  border-color: var(--accent-color);
-}
-.record__input:hover + .record__icon,
-.record__input:focus + .record__icon {
-  fill: var(--accent-color);
-}
+
+
 .feedback-input {
   width: 448px;
   height: 120px;
@@ -111,10 +117,10 @@
 
   background-color: var(--primery-white-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.feedback-input:hover,
-.feedback-input:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .agree {
   display: flex;
@@ -145,12 +151,13 @@
   background-image: url(../images/svg/check.svg);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-image: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border: 2px solid var(--accent-color);
+    background-image: url(../images/svg/check.svg);
+  }
 }
-.check-input:checked:focus + .check-box,
-.check-input:checked:hover + .check-box {
-  border: 2px solid var(--accent-color);
-  background-image: url(../images/svg/check.svg);
-}
+
 .check {
   @include font(14px, 1.71, 400);
   text-align: center;
@@ -176,9 +183,9 @@
   @include font(16px, 1.88, 700);
   transition: backround 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-btn:hover,
-.contact-btn:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
