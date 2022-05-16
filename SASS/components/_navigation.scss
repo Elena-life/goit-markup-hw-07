@@ -17,10 +17,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+   .current {
+      color: var(--accent-color);
+     }
   }
-}
-.navigation__link .current {
- color: var(--accent-color);
 }
 .current::after {
   content: '';
