@@ -811,7 +811,7 @@ body {
 }
 
 .record__input:hover .record__icon, .record__input:focus .record__icon {
-  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .record__icon {
