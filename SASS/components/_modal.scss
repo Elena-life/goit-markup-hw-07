@@ -86,7 +86,7 @@
   &:focus {
     border-color: var(--accent-color);
     .record__icon {
-      border-color: var(--accent-color);
+      fill: var(--accent-color);
     }
   }
 }
